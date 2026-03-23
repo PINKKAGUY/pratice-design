@@ -6,6 +6,7 @@ A landing page that demonstrates front-end design skills through its own executi
 
 ## What It Showcases
 
+- **Splash Screen** — Typewriter animation with realistic typo/correction effects
 - **Typography** — Type hierarchy, font scale, and spacing system built on Inter
 - **Layout & Grid** — CSS Grid compositions with asymmetric card layouts
 - **Complex Components** — Interactive calendar, kanban board, dashboard with animated charts, and chat interface
@@ -21,6 +22,7 @@ A landing page that demonstrates front-end design skills through its own executi
 
 ## Features
 
+- Animated splash screen with typewriter effect and simulated typos
 - Scroll-triggered reveal animations
 - Tab-based component switcher with fade transitions
 - Drag & drop kanban board
