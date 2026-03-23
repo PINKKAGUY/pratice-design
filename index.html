@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A design skills showcase — typography, layout, micro-interactions, and CSS animations." />
+    <title>Design Showcase</title>
+
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="icon" type="image/svg+xml" href="logo.svg" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <a href="#main" class="skip-link">Skip to content</a>
+
+    <div id="splash" aria-hidden="true">
+      <span class="splash__text">PINKKAGUY</span>
+      <span class="splash__cursor"></span>
+    </div>
+
+    <!-- ─────────────────────────────────────────────
+         Section 1 · Hero
+    ───────────────────────────────────────────── -->
+    <header id="hero" class="section section--hero">
+      <div class="section__inner">
+        <p class="hero__eyebrow">Design &amp; Front-End</p>
+        <h1 class="hero__name">PINKKAGUY</h1>
+        <p class="hero__tagline">Crafting interfaces with intention — typography, motion, and detail.</p>
+        <a href="#typography" class="hero__cta" aria-label="Explore the showcase">
+          <span>Explore</span>
+          <svg
+            class="hero__cta-icon"
+            width="16"
+            height="16"
+            viewBox="0 0 16 16"
+            fill="none"
+            aria-hidden="true"
+          >
+            <path d="M8 3v10M3 8l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+    </header>
+
+    <main id="main">
+
+      <!-- ─────────────────────────────────────────────
+           Section 2 · Typography Showcase
+      ───────────────────────────────────────────── -->
+      <section id="typography" class="section section--typography">
+        <div class="section__inner">
+          <header class="section__header reveal">
+            <span class="section__label">01 — Typography</span>
+            <h2 class="section__title">Type as<br />Visual Hierarchy</h2>
+          </header>
+
+          <div class="section__content">
+            <article class="type-specimen reveal" data-delay="1">
+              <p class="type-specimen__scale type-specimen__scale--display">Aa</p>
+              <div class="type-specimen__meta">
+                <p class="type-specimen__name">Inter</p>
+                <p class="type-specimen__detail">Display · 96px · Weight 300</p>
+              </div>
+            </article>
+
+            <div class="type-system reveal" data-delay="2">
+              <div class="type-system__row">
+                <span class="type-system__label">Display</span>
+                <p class="type-display">The quick brown fox</p>
+              </div>
+              <div class="type-system__row">
+                <span class="type-system__label">Heading 1</span>
+                <p class="type-h1">Designed with care</p>
+              </div>
+              <div class="type-system__row">
+                <span class="type-system__label">Heading 2</span>
+                <p class="type-h2">Details that matter</p>
+              </div>
+              <div class="type-system__row">
+                <span class="type-system__label">Body</span>
+                <p class="type-body">Good typography is invisible. It guides the reader without announcing itself — spacing, rhythm, and measure working in silent harmony.</p>
+              </div>
+              <div class="type-system__row">
+                <span class="type-system__label">Caption</span>
+                <p class="type-caption">Metadata · Labels · Supporting text</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ─────────────────────────────────────────────
+           Section 3 · Layout / Grid Showcase
+      ───────────────────────────────────────────── -->
+      <section id="layout" class="section section--layout">
+        <div class="section__inner">
+          <header class="section__header reveal">
+            <span class="section__label">02 — Layout</span>
+            <h2 class="section__title">Grid &amp;<br />Composition</h2>
+          </header>
+
+          <div class="section__content">
+            <div class="grid-demo reveal" data-delay="1" aria-label="Grid layout demonstration">
+              <div class="grid-demo__cell grid-demo__cell--1"><span>01</span></div>
+              <div class="grid-demo__cell grid-demo__cell--2"><span>02</span></div>
+              <div class="grid-demo__cell grid-demo__cell--3"><span>03</span></div>
+              <div class="grid-demo__cell grid-demo__cell--4"><span>04</span></div>
+              <div class="grid-demo__cell grid-demo__cell--5"><span>05</span></div>
+              <div class="grid-demo__cell grid-demo__cell--6"><span>06</span></div>
+            </div>
+
+            <div class="layout-cards reveal" data-delay="2">
+              <article class="layout-card layout-card--wide">
+                <h3 class="layout-card__title">Fluid Grids</h3>
+                <p class="layout-card__body">CSS Grid and custom properties combine to create layouts that adapt gracefully across every viewport.</p>
+              </article>
+              <article class="layout-card">
+                <h3 class="layout-card__title">Spacing Scale</h3>
+                <p class="layout-card__body">Consistent rhythm built on a base-8 spacing system.</p>
+              </article>
+              <article class="layout-card">
+                <h3 class="layout-card__title">Whitespace</h3>
+                <p class="layout-card__body">Negative space is not emptiness — it is structure and breath.</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ─────────────────────────────────────────────
+           Section 3b · Complex Components
+      ───────────────────────────────────────────── -->
+      <section id="components" class="section section--components">
+        <div class="section__inner">
+          <header class="section__header reveal">
+            <span class="section__label">03 — Components</span>
+            <h2 class="section__title">Complex UI<br />Patterns</h2>
+          </header>
+
+          <div class="section__content">
+            <div class="comp-tabs reveal" data-delay="1">
+              <div class="comp-tabs__bar" role="tablist" aria-label="Component demos">
+                <button class="comp-tabs__btn comp-tabs__btn--active" role="tab" aria-selected="true" aria-controls="panel-calendar" id="tab-calendar">Calendar</button>
+                <button class="comp-tabs__btn" role="tab" aria-selected="false" aria-controls="panel-kanban" id="tab-kanban">Kanban</button>
+                <button class="comp-tabs__btn" role="tab" aria-selected="false" aria-controls="panel-dashboard" id="tab-dashboard">Dashboard</button>
+                <button class="comp-tabs__btn" role="tab" aria-selected="false" aria-controls="panel-chat" id="tab-chat">Chat</button>
+              </div>
+
+              <!-- Calendar Panel -->
+              <div class="comp-tabs__panel comp-tabs__panel--active" role="tabpanel" id="panel-calendar" aria-labelledby="tab-calendar">
+                <div class="cal">
+                  <div class="cal__main">
+                    <div class="cal__header">
+                      <button class="cal__nav" aria-label="Previous month">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M10 3L5 8l5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                      </button>
+                      <span class="cal__month">March 2026</span>
+                      <button class="cal__nav" aria-label="Next month">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M6 3l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                      </button>
+                    </div>
+                    <div class="cal__grid">
+                      <span class="cal__dow">Mon</span>
+                      <span class="cal__dow">Tue</span>
+                      <span class="cal__dow">Wed</span>
+                      <span class="cal__dow">Thu</span>
+                      <span class="cal__dow">Fri</span>
+                      <span class="cal__dow">Sat</span>
+                      <span class="cal__dow">Sun</span>
+                      <span class="cal__day cal__day--muted">23</span>
+                      <span class="cal__day cal__day--muted">24</span>
+                      <span class="cal__day cal__day--muted">25</span>
+                      <span class="cal__day cal__day--muted">26</span>
+                      <span class="cal__day cal__day--muted">27</span>
+                      <span class="cal__day cal__day--muted">28</span>
+                      <span class="cal__day">1</span>
+                      <span class="cal__day">2</span>
+                      <span class="cal__day cal__day--dot">3</span>
+                      <span class="cal__day">4</span>
+                      <span class="cal__day">5</span>
+                      <span class="cal__day">6</span>
+                      <span class="cal__day">7</span>
+                      <span class="cal__day">8</span>
+                      <span class="cal__day">9</span>
+                      <span class="cal__day cal__day--dot">10</span>
+                      <span class="cal__day">11</span>
+                      <span class="cal__day cal__day--selected">12</span>
+                      <span class="cal__day">13</span>
+                      <span class="cal__day">14</span>
+                      <span class="cal__day">15</span>
+                      <span class="cal__day">16</span>
+                      <span class="cal__day cal__day--dot">17</span>
+                      <span class="cal__day">18</span>
+                      <span class="cal__day">19</span>
+                      <span class="cal__day">20</span>
+                      <span class="cal__day">21</span>
+                      <span class="cal__day">22</span>
+                      <span class="cal__day cal__day--today">23</span>
+                      <span class="cal__day">24</span>
+                      <span class="cal__day cal__day--dot">25</span>
+                      <span class="cal__day">26</span>
+                      <span class="cal__day">27</span>
+                      <span class="cal__day">28</span>
+                      <span class="cal__day">29</span>
+                      <span class="cal__day">30</span>
+                      <span class="cal__day">31</span>
+                      <span class="cal__day cal__day--muted">1</span>
+                      <span class="cal__day cal__day--muted">2</span>
+                      <span class="cal__day cal__day--muted">3</span>
+                      <span class="cal__day cal__day--muted">4</span>
+                      <span class="cal__day cal__day--muted">5</span>
+                    </div>
+                  </div>
+                  <div class="cal__slots">
+                    <p class="cal__slots-title">Thu, Mar 12</p>
+                    <button class="cal__slot">9:00 AM</button>
+                    <button class="cal__slot">10:30 AM</button>
+                    <button class="cal__slot">1:00 PM</button>
+                    <button class="cal__slot">2:00 PM</button>
+                    <button class="cal__slot">4:30 PM</button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Kanban Panel -->
+              <div class="comp-tabs__panel" role="tabpanel" id="panel-kanban" aria-labelledby="tab-kanban" hidden>
+                <div class="kanban">
+                  <div class="kanban__col">
+                    <div class="kanban__col-header">
+                      <h4 class="kanban__col-title">To Do</h4>
+                      <span class="kanban__count">3</span>
+                    </div>
+                    <div class="kanban__card">
+                      <span class="kanban__tag kanban__tag--blue">Design</span>
+                      <p class="kanban__card-title">Update landing hero</p>
+                      <p class="kanban__card-desc">Revise headline copy and adjust spacing for mobile viewports.</p>
+                      <div class="kanban__avatar" aria-hidden="true">PK</div>
+                    </div>
+                    <div class="kanban__card">
+                      <span class="kanban__tag kanban__tag--purple">Research</span>
+                      <p class="kanban__card-title">Competitor analysis</p>
+                      <p class="kanban__card-desc">Benchmark top 5 portfolio sites for interaction patterns.</p>
+                      <div class="kanban__avatar" aria-hidden="true">AL</div>
+                    </div>
+                    <div class="kanban__card">
+                      <span class="kanban__tag kanban__tag--orange">Dev</span>
+                      <p class="kanban__card-title">Add dark mode toggle</p>
+                      <p class="kanban__card-desc">Implement CSS custom property swap with JS.</p>
+                      <div class="kanban__avatar" aria-hidden="true">PK</div>
+                    </div>
+                  </div>
+                  <div class="kanban__col">
+                    <div class="kanban__col-header">
+                      <h4 class="kanban__col-title">In Progress</h4>
+                      <span class="kanban__count">2</span>
+                    </div>
+                    <div class="kanban__card">
+                      <span class="kanban__tag kanban__tag--orange">Dev</span>
+                      <p class="kanban__card-title">Component tab system</p>
+                      <p class="kanban__card-desc">Build accessible tab interface with fade transitions.</p>
+                      <div class="kanban__avatar" aria-hidden="true">PK</div>
+                    </div>
+                    <div class="kanban__card">
+                      <span class="kanban__tag kanban__tag--blue">Design</span>
+                      <p class="kanban__card-title">Icon set refresh</p>
+                      <p class="kanban__card-desc">Replace outlined icons with a more consistent stroke set.</p>
+                      <div class="kanban__avatar" aria-hidden="true">AL</div>
+                    </div>
+                  </div>
+                  <div class="kanban__col">
+                    <div class="kanban__col-header">
+                      <h4 class="kanban__col-title">Done</h4>
+                      <span class="kanban__count">2</span>
+                    </div>
+                    <div class="kanban__card">
+                      <span class="kanban__tag kanban__tag--green">Complete</span>
+                      <p class="kanban__card-title">Typography scale</p>
+                      <p class="kanban__card-desc">Define type ramp using Inter with fluid sizing.</p>
+                      <div class="kanban__avatar" aria-hidden="true">PK</div>
+                    </div>
+                    <div class="kanban__card">
+                      <span class="kanban__tag kanban__tag--green">Complete</span>
+                      <p class="kanban__card-title">Grid layout section</p>
+                      <p class="kanban__card-desc">CSS Grid demo with hover interactions and card layout.</p>
+                      <div class="kanban__avatar" aria-hidden="true">AL</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Dashboard Panel -->
+              <div class="comp-tabs__panel" role="tabpanel" id="panel-dashboard" aria-labelledby="tab-dashboard" hidden>
+                <div class="dash">
+                  <div class="dash__stats">
+                    <div class="dash__stat">
+                      <p class="dash__stat-label">Revenue</p>
+                      <p class="dash__stat-value">$12.4k</p>
+                      <p class="dash__stat-change dash__stat-change--up">+12%</p>
+                    </div>
+                    <div class="dash__stat">
+                      <p class="dash__stat-label">Users</p>
+                      <p class="dash__stat-value">1,284</p>
+                      <p class="dash__stat-change dash__stat-change--up">+8%</p>
+                    </div>
+                    <div class="dash__stat">
+                      <p class="dash__stat-label">Orders</p>
+                      <p class="dash__stat-value">64</p>
+                      <p class="dash__stat-change dash__stat-change--down">-3%</p>
+                    </div>
+                    <div class="dash__stat">
+                      <p class="dash__stat-label">Conversion</p>
+                      <p class="dash__stat-value">3.2%</p>
+                      <p class="dash__stat-change dash__stat-change--up">+1.2%</p>
+                    </div>
+                  </div>
+                  <div class="dash__chart">
+                    <p class="dash__chart-title">Weekly Overview</p>
+                    <div class="dash__bars">
+                      <div class="dash__bar-group">
+                        <div class="dash__bar" data-value="60"></div>
+                        <span class="dash__bar-label">Mon</span>
+                      </div>
+                      <div class="dash__bar-group">
+                        <div class="dash__bar" data-value="85"></div>
+                        <span class="dash__bar-label">Tue</span>
+                      </div>
+                      <div class="dash__bar-group">
+                        <div class="dash__bar" data-value="45"></div>
+                        <span class="dash__bar-label">Wed</span>
+                      </div>
+                      <div class="dash__bar-group">
+                        <div class="dash__bar" data-value="70"></div>
+                        <span class="dash__bar-label">Thu</span>
+                      </div>
+                      <div class="dash__bar-group">
+                        <div class="dash__bar" data-value="95"></div>
+                        <span class="dash__bar-label">Fri</span>
+                      </div>
+                      <div class="dash__bar-group">
+                        <div class="dash__bar" data-value="55"></div>
+                        <span class="dash__bar-label">Sat</span>
+                      </div>
+                      <div class="dash__bar-group">
+                        <div class="dash__bar" data-value="30"></div>
+                        <span class="dash__bar-label">Sun</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="dash__activity">
+                    <p class="dash__activity-title">Recent Activity</p>
+                    <ul class="dash__activity-list">
+                      <li class="dash__activity-item">
+                        <span class="dash__activity-dot dash__activity-dot--green"></span>
+                        <span class="dash__activity-text">New user registered</span>
+                        <span class="dash__activity-time">2m ago</span>
+                      </li>
+                      <li class="dash__activity-item">
+                        <span class="dash__activity-dot dash__activity-dot--blue"></span>
+                        <span class="dash__activity-text">Order #1042 completed</span>
+                        <span class="dash__activity-time">18m ago</span>
+                      </li>
+                      <li class="dash__activity-item">
+                        <span class="dash__activity-dot dash__activity-dot--orange"></span>
+                        <span class="dash__activity-text">Payment received — $240</span>
+                        <span class="dash__activity-time">1h ago</span>
+                      </li>
+                      <li class="dash__activity-item">
+                        <span class="dash__activity-dot dash__activity-dot--purple"></span>
+                        <span class="dash__activity-text">Campaign "Spring" launched</span>
+                        <span class="dash__activity-time">3h ago</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Chat Panel -->
+              <div class="comp-tabs__panel" role="tabpanel" id="panel-chat" aria-labelledby="tab-chat" hidden>
+                <div class="chat">
+                  <div class="chat__header">
+                    <div class="chat__avatar" aria-hidden="true">JD</div>
+                    <div class="chat__header-info">
+                      <p class="chat__header-name">Jane Doe</p>
+                      <p class="chat__header-status">Online</p>
+                    </div>
+                  </div>
+                  <div class="chat__messages">
+                    <div class="chat__msg chat__msg--received">
+                      <p>Hey! Did you see the new design mockups?</p>
+                      <span class="chat__msg-time">10:24 AM</span>
+                    </div>
+                    <div class="chat__msg chat__msg--sent">
+                      <p>Yes, they look fantastic! Love the spacing updates.</p>
+                      <span class="chat__msg-time">10:25 AM</span>
+                    </div>
+                    <div class="chat__msg chat__msg--received">
+                      <p>Great — I also tweaked the colour palette slightly. More contrast on the CTAs.</p>
+                      <span class="chat__msg-time">10:26 AM</span>
+                    </div>
+                    <div class="chat__msg chat__msg--sent">
+                      <p>That will help accessibility. Should we run a contrast audit?</p>
+                      <span class="chat__msg-time">10:27 AM</span>
+                    </div>
+                    <div class="chat__msg chat__msg--received">
+                      <p>Already on it. I will share the report this afternoon.</p>
+                      <span class="chat__msg-time">10:28 AM</span>
+                    </div>
+                    <div class="chat__msg chat__msg--received">
+                      <div class="chat__typing" aria-label="Typing indicator">
+                        <span></span><span></span><span></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="chat__input-bar">
+                    <input class="chat__input" type="text" placeholder="Type a message..." aria-label="Message input" />
+                    <button class="chat__send" aria-label="Send message">
+                      <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M16 2L7.5 10.5M16 2l-5 14-2.5-6.5L2 7l14-5z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ─────────────────────────────────────────────
+           Section 4 · Micro-interactions Showcase
+      ───────────────────────────────────────────── -->
+      <section id="interactions" class="section section--interactions">
+        <div class="section__inner">
+          <header class="section__header reveal">
+            <span class="section__label">04 — Micro-interactions</span>
+            <h2 class="section__title">Feedback &amp;<br />Delight</h2>
+          </header>
+
+          <div class="section__content">
+            <div class="interactions-grid reveal" data-delay="1">
+
+              <div class="interaction-demo interaction-demo--button">
+                <p class="interaction-demo__label">Buttons</p>
+                <div class="interaction-demo__stage">
+                  <button class="btn btn--primary">Primary Action</button>
+                  <button class="btn btn--ghost">Ghost Button</button>
+                  <button class="btn btn--icon" aria-label="Favourite">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                      <path d="M10 16.5s-7-4.5-7-9a4 4 0 0 1 7-2.65A4 4 0 0 1 17 7.5c0 4.5-7 9-7 9z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+
+              <div class="interaction-demo interaction-demo--hover">
+                <p class="interaction-demo__label">Hover States</p>
+                <div class="interaction-demo__stage">
+                  <a href="javascript:void(0)" class="hover-link">Underline reveal</a>
+                  <a href="javascript:void(0)" class="hover-link hover-link--fill">Background fill</a>
+                  <a href="javascript:void(0)" class="hover-link hover-link--lift">Lift on hover</a>
+                </div>
+              </div>
+
+              <div class="interaction-demo interaction-demo--input">
+                <p class="interaction-demo__label">Form Inputs</p>
+                <div class="interaction-demo__stage">
+                  <div class="form-field">
+                    <input class="form-field__input" type="text" id="demo-input" placeholder=" " />
+                    <label class="form-field__label" for="demo-input">Your message</label>
+                  </div>
+                  <div class="form-field">
+                    <input class="form-field__input" type="email" id="demo-email" placeholder=" " />
+                    <label class="form-field__label" for="demo-email">Email address</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="interaction-demo interaction-demo--toggle">
+                <p class="interaction-demo__label">Toggles &amp; Checkboxes</p>
+                <div class="interaction-demo__stage">
+                  <label class="toggle" aria-label="Toggle example">
+                    <input class="toggle__input" type="checkbox" />
+                    <span class="toggle__track"></span>
+                    <span class="toggle__label">Enable feature</span>
+                  </label>
+                  <label class="checkbox" aria-label="Checkbox example">
+                    <input class="checkbox__input" type="checkbox" checked />
+                    <span class="checkbox__box"></span>
+                    <span class="checkbox__label">Remember preference</span>
+                  </label>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ─────────────────────────────────────────────
+           Section 5 · CSS Animations Showcase
+      ───────────────────────────────────────────── -->
+      <section id="animations" class="section section--animations">
+        <div class="section__inner">
+          <header class="section__header reveal">
+            <span class="section__label">05 — Animations</span>
+            <h2 class="section__title">Motion &amp;<br />Timing</h2>
+          </header>
+
+          <div class="section__content">
+            <div class="animation-gallery reveal" data-delay="1">
+
+              <figure class="anim-card" aria-label="Fade and slide animation">
+                <div class="anim-card__stage">
+                  <div class="anim-demo anim-demo--fade-slide"></div>
+                </div>
+                <figcaption class="anim-card__caption">Fade + Slide</figcaption>
+              </figure>
+
+              <figure class="anim-card" aria-label="Scale and opacity animation">
+                <div class="anim-card__stage">
+                  <div class="anim-demo anim-demo--scale"></div>
+                </div>
+                <figcaption class="anim-card__caption">Scale</figcaption>
+              </figure>
+
+              <figure class="anim-card" aria-label="Staggered list animation">
+                <div class="anim-card__stage">
+                  <ul class="anim-demo anim-demo--stagger" aria-hidden="true">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                  </ul>
+                </div>
+                <figcaption class="anim-card__caption">Stagger</figcaption>
+              </figure>
+
+              <figure class="anim-card" aria-label="Morphing shape animation">
+                <div class="anim-card__stage">
+                  <div class="anim-demo anim-demo--morph"></div>
+                </div>
+                <figcaption class="anim-card__caption">Morph</figcaption>
+              </figure>
+
+              <figure class="anim-card" aria-label="Drawing line animation">
+                <div class="anim-card__stage">
+                  <svg class="anim-demo anim-demo--draw" viewBox="0 0 80 80" fill="none" aria-hidden="true">
+                    <path d="M10 40 Q40 10 70 40 Q40 70 10 40Z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                  </svg>
+                </div>
+                <figcaption class="anim-card__caption">Draw</figcaption>
+              </figure>
+
+              <figure class="anim-card" aria-label="Orbit animation">
+                <div class="anim-card__stage">
+                  <div class="anim-demo anim-demo--orbit">
+                    <div class="anim-demo__orbit-dot"></div>
+                  </div>
+                </div>
+                <figcaption class="anim-card__caption">Orbit</figcaption>
+              </figure>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- ─────────────────────────────────────────────
+         Section 6 · Footer
+    ───────────────────────────────────────────── -->
+    <footer id="footer" class="section section--footer">
+      <div class="section__inner">
+        <p class="footer__wordmark reveal">PINKKAGUY</p>
+
+        <nav class="footer__nav reveal" data-delay="1" aria-label="External links">
+          <a href="https://github.com/PINKKAGUY" class="footer__link" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </nav>
+
+        <nav class="footer__sections reveal" data-delay="2" aria-label="Page sections">
+          <a href="#hero" class="footer__section-link">Hero</a>
+          <a href="#typography" class="footer__section-link">Typography</a>
+          <a href="#layout" class="footer__section-link">Layout</a>
+          <a href="#components" class="footer__section-link">Components</a>
+          <a href="#interactions" class="footer__section-link">Interactions</a>
+          <a href="#animations" class="footer__section-link">Animations</a>
+        </nav>
+
+        <p class="footer__colophon reveal" data-delay="3">
+          Set in Inter · Built with vanilla HTML, CSS &amp; JS · &copy; <span id="year">2026</span>
+        </p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
